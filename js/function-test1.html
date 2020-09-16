@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+    <script type="text/javascript">
+    // function sayHello() {
+    //     document.write('<h1>안녕하세요</h1>');
+    //     document.write('<h1>자바스크립트</h1>');
+    // }
+
+    // sayHello();
+    // sayHello();
+
+    // function f(x) {
+    //     var y = x + 1;
+    //     document.write('<h1>'+y+'</h1>');
+    // }
+    // f(2);
+    // f(5);
+    // f(10);
+
+    // function f(x, y) {
+    //     var z = x + y;
+        
+    //     if (z<10) {
+    //         return;
+    //     }
+    //     return z;
+    // }
+    // var a = f(2, 1); // 지정못함
+    // var b = f(5, 7);
+    // var c = f(10, 5);
+
+    // document.write('<h1>'+a+'</h1>');
+    // document.write('<h1>'+b+'</h1>');
+    // document.write('<h1>'+c+'</h1>');
+
+    // function sum(x,y){
+    //     var z = x + y;
+    //     return z;
+    // }
+
+    // function printReslt(x, y) {
+    //     var result = sum(x, y);
+    //     document.write('<h1>'+result+'</h1>')
+    // }
+    //     printReslt(7,10);
+
+        
+        // var str = "100+1";
+        // document.write('<h1>'+str+'</h1>')
+        // var result = eval(str);
+        // document.write('<h1>'+result+'</h1>')
+
+        // var value = "100";
+        // var num1 = Number(value);
+        // var num2 = parseInt(value);
+
+        // var r1 = value + 1;
+
+        // var r2 = num1 + 1;
+        // var r3 = num2 + 1;
+        // document.write('<h1>'+r1+'</h1>')
+        // document.write('<h1>'+r2+'</h1>')
+        // document.write('<h1>'+r3+'</h1>')
+
+        // var value = "100.6";
+        // var num1 = Number(value);
+        // var num2 = parseInt(value);
+
+        // var r1 = value + 1;
+
+        // var r2 = num1 + 1;
+        // var r3 = num2 + 1;
+        // document.write('<h1>'+r1+'</h1>')
+        // document.write('<h1>'+r2+'</h1>')
+        // document.write('<h1>'+r3+'</h1>')
+
+        // var a = Number("a");
+        // document.write('<h1>a='+a+'</h1>')
+
+        // var a_sum = a + 1;
+        // document.write('<h1>a_sum='+a_sum+'</h1>')
+
+        // var a_str = a + "str";
+        // document.write('<h1>a_str='+a_str+'</h1>')
+
+
+        // var r1 = "가나다라";
+        // var r2 = "12345";
+        
+        // var is_num1 = !isNaN(r1); // ! 부텨여서 false
+        // var is_num2 = !isNaN(r2); // ! 붙여서 true
+
+        // if (is_num1) {
+        //     document.write('<h1>'+r1+"'은 숫자입니다.'</h1>");
+        // } else {
+        //     document.write('<h1>'+r1+"'은 숫자가 아닙니다.'</h1>");
+        // }
+
+        // if (is_num2) {
+        //     document.write('<h1>'+r2+"'은 숫자입니다.'</h1>");
+        // } else {
+        //     document.write('<h1>'+r2+"'은 숫자가 아닙니다.'</h1>");
+        // }
+
+
+        // function sumInt(x, y) {
+        //     var isStrX = !isNaN(x); // ! 부텨여서 false
+        //     var isStrY = !isNaN(y); // ! 붙여서 true
+
+        //     if (isStrX||isStrY) {
+        //         return "숫자 형태이거나 숫자값이 전달되어야 합니다."
+        //     }
+        //     var result = parseInt(x) + parseInt(y);
+        //     return result;
+        // }
+
+        // var sum1 = sumInt("a", 1);
+        // var sum2 = sumInt("1", 1);
+        // var sum3 = sumInt(100, "5.1");
+        // var sum4 = sumInt(-1, "-100");
+
+        // document.write('<h1>'+sum1+"</h1>");
+        // document.write('<h1>'+sum2+"</h1>");
+        // document.write('<h1>'+sum3+"</h1>");
+        // document.write('<h1>'+sum4+"</h1>");
+
+        // var user_id = prompt("아이디를 입력하세요.", "");
+
+        // if (user_id != "") {
+        //     alert("안녕하세요."+user_id+'님');
+
+        //     var result = confirm("정말 로그아웃 하시겠습니까?");
+
+        //     if (result) {
+        //         alert("로그아웃 되셨습니다.")
+        //     } else {
+        //         alert("로그아웃이 취소되었습니다.")
+        //     }
+        // }
+
+        // function sum(x, y) {
+        //     var z = x + y;
+        //     return z;
+        // }
+
+        // function printReslt() {
+        //     var result = sum(10, 50);
+
+        //     var mytag = document.getElementById("question");
+
+        //     mytag.innerHTML = result;
+        // }
+
+            // function insertQuestion() {
+            //     var q = prompt("사칙연산의 수식을 입력하세요.","");
+
+            //     var answer = eval(q);
+
+            //     var result = q + "=" + answer;
+
+            //     document.getElementById("question").innerHTML = result;
+            // }
+
+        function doPrint(num) {
+            var msg = "doPoint()가 " +num+ "회 실행되었습니다.";
+            alert(msg);
+            document.getElementById("question").innerHTML = msg;
+        }
+        doPrint(1);
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        doPrint(2);
+    </script>
+
+    <h1 id="myid">안녕하세요.</h1>
+
+    <script type="text/javascript">
+    doPrint(3)</script>
+
+</body>
+</html>

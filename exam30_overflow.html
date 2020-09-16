@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>레이아웃 속성 - overflow</title> 
+    <!-- <style type="text/css"> 
+        #visible, #hidden, #scroll, #auto { 
+            width:400px; height:150px; 
+            background-color:#FAF4C0; 
+            border: 1px solid black; 
+            margin-bottom: 100px; margin-right:8px; 
+            float: left; 
+            } 
+        #visible{overflow: visible; } 
+        #hidden{overflow: hidden; } 
+        #scroll{overflow: scroll; } 
+        #auto{overflow: auto;} 
+    </style> 
+</head> 
+<body> 
+    <div id="visible"> 
+    <h2>1.overflow:visible</h2> 
+    <p>When Alice follows the White Rabbit down a rabbit hole, she finds 
+    herself in a land where she can change her size. She meets a Duchess with 
+    a pig for a baby, a Cook that throws spoons, a wise but mad Cheshire cat, 
+    the March Hare, Mad Hatter and a Dormouse. A Caterpillar shows her how 
+    43 
+    to adjust her height by eating from the right and left sides of a mushroom. 
+    With that knowledge.</p> 
+    </div> 
+    <div id="hidden"> 
+    <h2>2.overflow:hidden</h2> 
+    <p>When Alice follows the White Rabbit down a rabbit hole, she finds 
+    herself in a land where she can change her size. She meets a Duchess with 
+    a pig for a baby, a Cook that throws spoons, a wise but mad Cheshire cat, 
+    the March Hare, Mad Hatter and a Dormouse. A Caterpillar shows her how 
+    to adjust her height by eating from the right and left sides of a mushroom. 
+    With that knowledge</p> 
+    </div> 
+    <div id="scroll"> 
+    <h2>3.overflow:scroll</h2> 
+    </div> 
+    <div id="auto"> 
+    <h2>4.overflow:auto</h2> 
+    <p>When Alice follows the White Rabbit down a rabbit hole, she finds 
+    herself in a land where she can change her size. She meets a Duchess with 
+    a pig for a baby, a Cook that throws spoons, a wise but mad Cheshire cat, 
+    the March Hare, Mad Hatter and a Dormouse. A Caterpillar shows her how 
+    to adjust her height by eating from the right and left sides of a mushroom. 
+    With that knowledge</p> 
+</div> 
+</body> 
+</html>  -->
+    <title>display - 블록과 인라인</title> 
+    <style type="text/css"> 
+        span{ 
+        width: 100px; height: 100px; 
+        /* display: none;  */
+        /* display: inline;  */
+        /* display: block; */ 
+        display: inline-block; 
+        } 
+        #html { 
+        background-color:#FFE400; 
+        } 
+        #css { 
+        background-color:#B5B2FF; 
+        /* visibility: hidden; */ 
+        } 
+        #js { 
+        background-color:#D9418C; 
+        } 
+    </style> 
+</head> 
+<body> 
+    웹 표준은 
+    <span id="html">HTML</span>구조, 
+    <span id="css">CSS</span>디자인, 
+    <span id="js">JavaScript</span>동작이 있습니다. 
+</body> 
+</html> 

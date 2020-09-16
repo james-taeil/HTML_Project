@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        /** 날짜 객체 */ 
+        var theday = new Date(2016, 0, 1); 
+        var today = new Date(); 
+        var cnt = today.getTime() - theday.getTime(); 
+        
+        // Math.floor는 소수점 이하를 절단하는 함수이다. 
+        var day = Math.floor(cnt / (24 * 60 * 60 * 1000)); 
+        document.write("<h1>올해는 " + day + "일 지났습니다.</h1>"); 
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

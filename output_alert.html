@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function callTen(callback) {
+        //     for (var i = 0; i < 10; i++) {
+        //         callback();
+        //     }
+        // }
+
+        // function callback() {
+        //     alert('함수호출')
+        // }
+        // callTen(callback);
+
+        // var product = {
+        //     제품명: "a",
+        //     유형: "b",
+        //     성분: "c",
+        //     원산지: "d"
+        // };
+
+        // for (var i in product) {
+        //     alert(i + ':' + product[i]);
+        // }
+
+        // var person = {
+        //     name: "김태일",
+        //     eat: function (food) {
+        //         alert(this.name + "이/가 " + food + ' 을/를 먹습니다.');
+        //     }
+        // };
+
+        // document.querySelector('h1').style.backgroundColor = 'red';
+        // document.querySelector('h2').style.color = 'blue';
+        // window.onload = function () {
+        //     document.querySelector('h1').style.backgroundColor = 'red';
+        //     document.querySelector('h2').style.color = 'blue';
+        // }
+        // window.onload = function () {
+        //     var header = document.getElementById("header");
+
+        //     header.style.color = 'orange'
+        //     header.style.background = 'blue';
+        //     header.innerHTML = 'From javascipt'
+        // }
+        // window.onload = function () {
+        //     var header = document.querySelector("h1");
+
+        //     header.style.color = 'orange'
+        //     header.style.background = 'blue';
+        //     header.innerHTML = 'From javascipt'
+        // }
+        // window.onload = function () {
+        //     var headers = document.querySelectorAll("h1");
+
+        //     for (var i = 0; i < headers.length; i++) {
+        //         var header = headers[i];
+                
+        //         header.style.color = 'orange';
+        //         header.style.background = 'blue';
+        //         header.innerHTML = 'From javascipt';
+        //     }
+        // };
+        // window.onload = function () {
+        //     var output = '';
+        //     for (var i = 0; i < 10; i++) {
+        //         output += '<h1>Header -' + i + '</h1>';
+        //     }
+        //     // document.body.textContent = output;
+        //     document.body.innerHTML = output;
+        // }
+        // window.onload = function () {
+        //     // 문서 객체를 추가합니다.
+        //     var output = '';
+        //     for (var i = 0; i < 256; i++) {
+        //         output += '<div></div>';
+        //     }
+        //     document.body.innerHTML = output;
+
+        //     // 문서 객체를 선택합니다.
+        //     var divs = document.querySelectorAll('div');
+        //     for (var i = 0; i < divs.length; i++) {
+        //         // 변수를 선언합니다.
+        //         var div = divs[i];
+
+        //         // 스타일을 적용합니다.
+        //         div.style.height = '2px';
+        //         div.style.background = 'rgb(' + i + ',' + i + ',' + i + ')';
+        //     }
+        // };
+        // window.onload = function () {
+        //     // 변수를 선언합니다.
+        //     var image = document.getElementById('image');
+
+        //     // 속성을 변경합니다.
+        //     image.src = 'http://placehold.it/300x200';
+        //     image.width = 300;
+        //     image.height = 200;
+        // };
+        // window.onload = function () {
+        //     // 속성을 지정합니다.
+        //     document.body.setAttribute('data-custom', 'value');
+
+        //     // 속성을 추출합니다.
+        //     var dataCustom = document.body.getAttribute('data-custom');
+        //     document.write(dataCustom);
+        // };
+
+        // window.onload = function () {
+        //     // 속성을 지정합니다.
+        //     document.body.setAttribute('data-custom', 'value');
+
+        //     // 속성을 추출합니다.
+        //     var dataCustom = document.body.getAttribute('data-custom');
+        //     alert(dataCustom)
+        // };
+
+        // window.onload = function () {
+		// 		// 변수를 선언합니다.
+		// 		var clock = document.getElementById('clock');
+
+		// 		// 1초마다 함수를 실행합니다.
+		// 		setInterval(function () {
+		// 			var now = new Date();
+		// 			clock.innerHTML = now.toString();
+
+		// 		}, 1000);
+		// 	};
+
+        // function buttonClick() {
+        //     alert('click');
+        // }
+        // window.onload = function () {
+        //     // 문서 객체를 선택합니다.
+        //     var button = document.getElementById('button');
+
+        //     // 이벤트를 연결합니다.
+        //     button.onclick = function () {
+        //         alert('click');
+        //     };
+        // };
+
+        // window.onload = function (event) {
+        //     alert(event);
+        // };
+
+        window.onload = function () {
+            // 문서 객체를 선택합니다.
+            var button = document.getElementById('button');
+
+            // 이벤트를 연결합니다.
+            button.onclick = function () {
+                // 기본 이벤트를 제거합니다.
+                return false;
+            };
+        };
+        
+
+
+    </script>
+</head>
+<body>
+    <!-- // <h1>process -1</h1>
+    // <h2>process -2</h2>
+    // <script>
+    //     document.querySelector('h1').style.backgroundColor = 'red';
+    //     document.querySelector('h2').style.color = 'blue';
+    // </script> 
+    // <h1>Header</h1>
+    // <h1>Header</h1>
+    // <h1>Header</h1> -->
+    <!-- <img id="image"> -->
+    <!-- <h1 id="clock"></h1> -->
+    <!-- <button onclick="alert('click')">q버튼</button>
+    <button onclick="buttonClick">w버튼</button> -->
+    <!-- <button id="button">e버튼</button>
+    <script>
+    document.getElementById('button').onclick = function () {
+        this.textContent = this.textContent + '★';
+    };
+    </script> -->
+    <a id="button" href="http://www.naver.com">버튼</a>
+
+    
+
+</body>
+</html>

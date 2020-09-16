@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        /** 목록정의 요소의 여백 제거, 넓이지정, 기호 제거 */ 
+        ul { padding: 0; margin: 0; width: 670px; list-style: none; } 
+        /** 목록의 가로 배치 */ 
+        li { float: left; } 
+        /** float 속성 해제 */ 
+        ul:after { content: ''; display: block; float: none; clear: both; } 
+        /** 이미지 테두리 제거 */ 
+        img { border: none; } 
+    </style>
+
+    <script type="text/javascript">
+        function changeImage(image, id) { 
+        // 파라미터로 전달받은 요소의 id값을 사용하여 image객체를 만든다. 
+        // 그 객체의 src 속성값에 파리미터로 전달된 이미지 경로를 대입하여, 
+        // 표시 이미지를 변경한다. 
+        document.getElementById(id).src = image; 
+        } 
+    </script>
+
+</head>
+<body>
+    <ul> 
+        <li> 
+        <a href="#" onmouseover="changeImage('img/jquery_on.jpg', 
+        'jquery');" onmouseout="changeImage('img/jquery.jpg', 'jquery');"> 
+        <img id="jquery" src="img/jquery.jpg"/></a> 
+        </li> 
+        89 
+        <li> 
+        <a href="#" onmouseover="changeImage('img/javascript_on.jpg', 
+        'js');" onmouseout="changeImage('img/javascript.jpg', 'js');"> 
+        <img id="js" src="img/javascript.jpg"/></a> 
+        </li> 
+        <li> 
+        <a href="#" onmouseover="changeImage('img/css_on.jpg', 'css');" 
+        onmouseout="changeImage('img/css.jpg', 'css');"> 
+        <img id="css" src="img/css.jpg"/></a> 
+        </li> 
+        <li> 
+        <a href="#" onmouseover="changeImage('img/html_on.jpg', 'html');" 
+        onmouseout="changeImage('img/html.jpg', 'html');"> 
+        <img id="html" src="img/html.jpg"/></a> 
+        </li> 
+        </ul> 
+        
+</body>
+</html>

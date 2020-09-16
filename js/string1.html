@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var url = "http://www.naver.com/"; 
+        document.write("<p>문자열 : " + url + "</p>");
+        
+        var len = url.length; 
+        document.write("<p>문자열의 길이 : " + len + "</p>"); 
+
+        var str2nd = url.charAt(2); 
+        document.write("<p>두번째 글자 : " + str2nd + "</p>"); 
+
+        var position1 = url.indexOf("/"); 
+        document.write("<p>`/`가 처음 나타나는 위치 : " + position1 + "</p>"); 
+
+        var position2 = url.indexOf("/", position1+1); 
+        document.write("<p>`/`가 두 번째로 나타나는 위치 : " + position2 + "</p>"); 
+
+        var position3 = url.lastIndexOf("/"); 
+        document.write("<p>`/`의 마지막 위치 : " + position3 + "</p>"); 
+
+        var substring1 = url.substring(0, 5); 
+        document.write("<p>문자열 자르기 : " + substring1 + "</p>"); 
+
+        var substring2 = url.substring(7); 
+        document.write("<p>문자열 자르기 : " + substring2 + "</p>"); 
+
+        var up = url.toUpperCase(); 
+        document.write("<p>모든 글자의 대문자 변환 : " + up + "</p>"); 
+
+        var low = url.toLowerCase(); 
+        document.write("<p>모든 글자의 소문자 변환 : " + low + "</p>"); 
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
